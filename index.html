@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Responsive internship listing board">
+
+    <title>Internship Board</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+
+
+    <header class="site-header">
+
+        <div class="container header-inner">
+
+            <a href="#" class="logo">
+                Internship Board
+            </a>
+
+            <nav aria-label="Main navigation">
+
+                <a href="#internships">
+                    Internships
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+
+    <main id="main-content">
+
+
+
+        <section class="hero">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    Career Opportunities
+                </p>
+
+                <h1>
+                    Find Your Next Internship
+                </h1>
+
+                <p class="hero-text">
+                    Search and filter internships by
+                    domain, skills and location.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+
+        <section id="internships" class="container board-section" aria-labelledby="board-title">
+
+            <div class="section-heading">
+
+                <h2 id="board-title">
+                    Internship Listings
+                </h2>
+
+                <p id="result-count" aria-live="polite">
+                    Loading internships...
+                </p>
+
+            </div>
+
+
+            <form id="filters" class="filters" role="search" aria-label="Filter internships">
+
+                <!-- SEARCH -->
+                <div class="field">
+
+                    <label for="search">
+                        Search
+                    </label>
+
+                    <input type="search" id="search" name="search" placeholder="Search internship..."
+                        autocomplete="off">
+
+                </div>
+
+                <div class="field">
+
+                    <label for="domain">
+                        Domain
+                    </label>
+
+                    <select id="domain" name="domain">
+
+                        <option value="all">
+                            All domains
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <button type="button" id="clear-filters" class="button">
+                    Clear Filters
+                </button>
+
+            </form>
+
+            <div id="status" class="status" role="status" aria-live="polite"></div>
+
+            <div id="internship-list" class="card-grid"></div>
+
+        </section>
+
+        <section id="about" class="about">
+
+            <div class="container">
+
+                <h2>
+                    About This Project
+                </h2>
+
+                <p>
+                    This responsive internship board
+                    demonstrates semantic HTML, responsive
+                    CSS, JavaScript DOM rendering,
+                    filtering and accessible interactions.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 Internship Board.
+                Built with HTML, CSS and JavaScript.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
